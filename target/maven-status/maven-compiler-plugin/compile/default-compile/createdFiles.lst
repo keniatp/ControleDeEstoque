@@ -1,0 +1,15 @@
+com\example\servicer\ProdutoService.class
+com\example\cadastroprodutos\repository\SaidaRepository.class
+com\example\cadastroprodutos\CadastroprodutosApplication.class
+com\example\cadastroprodutos\model\Saida.class
+com\example\cadastroprodutos\controller\ProdutoController.class
+com\example\cadastroprodutos\controller\SaidaController.class
+com\example\cadastroprodutos\controller\UsuarioController.class
+com\example\servicer\SaidaServicer.class
+com\example\cadastroprodutos\repository\UsuarioRepository.class
+com\example\servicer\UsuarioServicer$PessoasService.class
+com\example\cadastroprodutos\model\Usuario.class
+com\example\cadastroprodutos\repository\ProdutoRepository.class
+com\example\cadastroprodutos\model\Produto.class
+com\example\servicer\SaidaServicer$PessoasService.class
+com\example\servicer\UsuarioServicer.class
