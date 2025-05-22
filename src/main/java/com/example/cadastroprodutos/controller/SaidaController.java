@@ -13,9 +13,10 @@ import org.springframework.web.bind.annotation.RestController; // Indica que est
 import com.example.cadastroprodutos.CadastroprodutosApplication;
 import com.example.cadastroprodutos.model.Saida;
 import com.example.cadastroprodutos.repository.SaidaRepository;
-import com.example.servicer.SaidaService;
+import com.example.cadastroprodutos.servicer.SaidaService;
+
 @RestController
-@RequestMapping("/api/cadastroprodutos")
+@RequestMapping("/api/saida")
 public class SaidaController {
     private final SaidaRepository saidaRepository;
     @Autowired
@@ -27,11 +28,11 @@ public class SaidaController {
 
     @GetMapping
     public List<Saida> listarTodos() {
-        // Chama o método findAll() do repository para buscar todas as pessoas
+        // Chama o método findAll() do repository para buscar todas as saidas
         return saida.listarTodos();
     }
 
-        @GetMapping("/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Saida> buscarPorId(@PathVariable Integer id) {
         // Busca a pessoa pelo ID, se encontrar, retorna 200 (OK), se não, retorna 404 (Not Found)
         return saida.buscarPorId(id)
@@ -55,17 +56,7 @@ public class SaidaController {
         idSaida.setId(id);
         // Salva o objeto atualizado e retorna 200 (OK)
         return ResponseEntity.ok(saida.salvar(idSaida));
-
-
     }
-
-    /**
-     * Método DELETE para excluir uma pessoa do banco de dados.
-     * URL: /api/pessoas/{id}
-     * Método HTTP: DELETE
-     * Parâmetro: ID da pessoa a ser excluída
-     * Retorno: ResponseEntity com status 204 (No Content) ou 404 (Not Found) se não encontrar
-     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletar(@PathVariable Integer id) {
         // Verifica se o ID existe no banco de dados

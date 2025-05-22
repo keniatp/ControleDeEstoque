@@ -28,16 +28,15 @@ import lombok.Setter;                        // Lombok - Gera os métodos SET au
 public class Saida {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(nullable = false)
-    private LocalDateTime data;
+    private String data;
+
+   
 
     @Column(nullable = false)
-    private int Quantidade;
-
-    @Column(nullable = false)
-    private int quantidade_saida;
+    private int quantidade;
 
     @Column(nullable = false)
     private int id_produto;

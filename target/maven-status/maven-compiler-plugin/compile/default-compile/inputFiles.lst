@@ -8,6 +8,6 @@ C:\Users\Aluno_Tarde\Documents\cadastroprodutos\src\main\java\com\example\cadast
 C:\Users\Aluno_Tarde\Documents\cadastroprodutos\src\main\java\com\example\cadastroprodutos\repository\ProdutoRepository.java
 C:\Users\Aluno_Tarde\Documents\cadastroprodutos\src\main\java\com\example\cadastroprodutos\repository\SaidaRepository.java
 C:\Users\Aluno_Tarde\Documents\cadastroprodutos\src\main\java\com\example\cadastroprodutos\repository\UsuarioRepository.java
-C:\Users\Aluno_Tarde\Documents\cadastroprodutos\src\main\java\com\example\servicer\ProdutoService.java
-C:\Users\Aluno_Tarde\Documents\cadastroprodutos\src\main\java\com\example\servicer\SaidaServicer.java
-C:\Users\Aluno_Tarde\Documents\cadastroprodutos\src\main\java\com\example\servicer\UsuarioServicer.java
+C:\Users\Aluno_Tarde\Documents\cadastroprodutos\src\main\java\com\example\cadastroprodutos\servicer\ProdutoService.java
+C:\Users\Aluno_Tarde\Documents\cadastroprodutos\src\main\java\com\example\cadastroprodutos\servicer\SaidaService.java
+C:\Users\Aluno_Tarde\Documents\cadastroprodutos\src\main\java\com\example\cadastroprodutos\servicer\UsuarioService.java

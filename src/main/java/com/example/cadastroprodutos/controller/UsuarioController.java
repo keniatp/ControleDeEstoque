@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController; // Indica que est
 import com.example.cadastroprodutos.CadastroprodutosApplication;
 import com.example.cadastroprodutos.model.Usuario;
 import com.example.cadastroprodutos.repository.UsuarioRepository;
-import com.example.servicer.UsuarioService;
+import com.example.cadastroprodutos.servicer.UsuarioService;
 @RestController
-@RequestMapping("/api/cadastroprodutos")
+@RequestMapping("/api/usuario")
 
 public class UsuarioController {
 
@@ -29,11 +29,9 @@ public class UsuarioController {
         this.usuarioRepository = usuarioRepository;
     }
 
-
-
     @GetMapping
     public List<Usuario> listarTodos() {
-        // Chama o método findAll() do repository para buscar todas as pessoas
+        // Chama o método findAll() do repository para buscar todas os usuarios
         return usuario.listarTodos();
     }
 
@@ -62,16 +60,8 @@ public class UsuarioController {
         // Salva o objeto atualizado e retorna 200 (OK)
         return ResponseEntity.ok(usuario.salvar(usu));
 
-
     }
 
-    /**
-     * Método DELETE para excluir uma pessoa do banco de dados.
-     * URL: /api/pessoas/{id}
-     * Método HTTP: DELETE
-     * Parâmetro: ID da pessoa a ser excluída
-     * Retorno: ResponseEntity com status 204 (No Content) ou 404 (Not Found) se não encontrar
-     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletar(@PathVariable Integer id) {
         // Verifica se o ID existe no banco de dados

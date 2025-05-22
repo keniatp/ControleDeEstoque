@@ -1,4 +1,4 @@
-package com.example.servicer;
+package com.example.cadastroprodutos.servicer;
 import java.util.List;
 import java.util.Optional;
 
