@@ -2,14 +2,7 @@
 
 Projeto desenvolvido em parceria com **Ian Saldanha** ([@031Iansz](https://github.com/031Iansz)), utilizando **Spring Boot**, com o objetivo de criar uma API REST para gerenciar o controle de estoque de produtos.
 
-## Descrição do Projeto
-A API permite o gerenciamento de um estoque, contemplando:
-- **Cadastro de Usuários**
-- **Cadastro de Produtos**
-- **Registro de Saídas de Produtos**
-
 ## Estrutura do Banco de Dados
-
 ### Tabela: `usuario`
 | Campo    | Tipo | Descrição       |
 | -------- | ---- | --------------- |
